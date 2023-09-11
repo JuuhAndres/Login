@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div#a{
+    text-align: center;
+    margin-top: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    left:50%;
+    top: 4%; 
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 223, 223, 0);
+    color: black;
+    width: 400px;
+    
+}
+div#a >a{
+    color: white ;
+    text-decoration: none;
+    background-color: #10121f00;
+    padding: 0px 10px 0px 10px;
+    font-size: 17px;
+    position: relative;
+}
+div#a > a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+div#a > a:hover::after{
+    width: 100%;
+}
+.box{
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left,#5e0808,#1F1613,#10121F,#141F0D,#2d3f20);
+    background-size: 500% 100%;
+    animation: degrade 5s infinite alternate;
+}
+
+div#caixa{
+    position: absolute;
+    left:50%;
+    top: 50%; 
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 223, 223, 0.24);
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px rgba(255, 255, 255, 0.137);
+}
+
+#caixa >h1{
+    text-align: center;
+    padding: 40px;
+    color: white;
+    font-family: 'Cormorant', serif;
+    font-size: 3em;
+}
+#caixa >h1:hover{
+    color: rgba(248, 248, 248, 0.575);
+    transition:linear all 1s;
+}
+#caixa > input#nome{
+    position: relative;
+    top:100px;
+    left: 50px;
+    padding: 3px;
+    background-color: rgba(150, 150, 150, 0.027);
+    border: 0px;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    outline: 0;
+
+}
+#caixa > input#nome:focus , #caixa > input#nome:valid{
+    border-bottom: 2px solid rgb(36, 103, 230);
+    transition: 0.5s ease-in-out;
+}
+#caixa > input#senha:focus , #caixa > input#senha:valid{
+    border-bottom: 2px solid rgb(36, 103, 230);
+    transition: 0.5s ease-in-out;
+}
+#caixa > input#nome:focus ~ label#nome,
+#caixa > input#nome:valid ~ label#nome{
+    top: 75px;
+    transform: translateY(-30px);
+    font-size: 14px;
+    color: rgb(36, 103, 230);
+    
+}
+#caixa > label#nome{
+    position: relative;
+    top:95px;
+    left:-120px;
+    color: rgb(134, 134, 134);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+}
+#caixa > input#senha{
+    position: relative;
+    top:140px;
+    left: 50px;
+    padding: 3px;
+    background-color: rgba(150, 150, 150, 0.027);
+    border: 0px;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    outline: 0;
+}
+#caixa > label#senha{
+    position: relative;
+    top:135px;
+    left: -120px;
+    color: rgb(134, 134, 134);
+    cursor: text;
+    transition: 0.5s ease-in-out ;
+    
+}
+#caixa > input#senha:focus ~ label#senha,
+#caixa > input#senha:valid ~ label#senha{
+    top: 120px;
+    transform: translateY(-30px);
+    font-size: 15px;
+    color: rgb(36, 103, 230);
+    
+}
+div#botao{
+    position: relative;
+    top:180px;
+    left: 70px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.199);
+    width: 50%;
+    border-radius: 5px;
+}
+div#botao:hover{
+    transition: 0.4s;
+    background-color: rgba(255, 0, 0, 0.521);
+}
+div#botao>h2 {
+    text-align: center;
+    
+}
+div#botao>h2 a{
+    text-decoration: none;
+    color: white;
+}
+
+div.box > p{
+    text-align: center;
+    color: white;
+    position: relative;
+    top:280px;
+    left:0px;
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+    
+}
