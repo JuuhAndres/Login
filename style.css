@@ -15,7 +15,7 @@ div#a{
     top: 4%; 
     transform: translate(-50%,-50%);
     background-color: rgba(255, 223, 223, 0);
-    color: black;
+    color: white;
     width: 400px;
     
 }
@@ -26,6 +26,10 @@ div#a >a{
     padding: 0px 10px 0px 10px;
     font-size: 17px;
     position: relative;
+}
+div#a> a:hover{
+    color: rgba(212, 212, 212, 0.452);
+    transition: 0.5s;
 }
 div#a > a::after{
     content: " ";
@@ -138,10 +142,10 @@ div#caixa{
 }
 div#botao{
     position: relative;
-    top:180px;
+    top: 180px;
     left: 70px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.199);
+    background-color: rgba(0,0,0,0.199);
     width: 50%;
     border-radius: 5px;
 }
@@ -149,22 +153,22 @@ div#botao:hover{
     transition: 0.4s;
     background-color: rgba(255, 0, 0, 0.521);
 }
-div#botao>h2 {
+div#botao h2{
     text-align: center;
-    
 }
-div#botao>h2 a{
+div#botao >h2 a{
     text-decoration: none;
     color: white;
 }
-
-div.box > p{
+div.box p{
     text-align: center;
     color: white;
     position: relative;
-    top:280px;
-    left:0px;
+    top: 280px;
+    left: 0px;
+
 }
+
 
 @keyframes degrade {
     0%{
