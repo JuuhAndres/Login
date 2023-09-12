@@ -50,8 +50,8 @@ div#a > a:hover::after{
 }
 .box{
     width: 100%;
-    padding: 300px 0;
-    height: 300px;
+    padding: 450px 0;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
