@@ -1,14 +1,15 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;700&display=swap');
-@media (min-width: 200px) {
-    
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+body,html{
+    width: 100vw;
+    height: 100vh;
+}
 
 div#a{
     text-align: center;
@@ -50,8 +51,8 @@ div#a > a:hover::after{
 }
 .box{
     width: 100%;
-    padding: 450px 0;
-    height: 450px;
+    padding: 350px 0;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,5 +176,4 @@ div#botao >h2 a{
         background-position-x: 100%;
     }
     
-}
 }
