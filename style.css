@@ -9,7 +9,7 @@
 }
 body,html{
     
-    height: 100vh;
+
     background-size: cover;
 }
 
@@ -53,8 +53,8 @@ div#a > a:hover::after{
 }
 .box{
     width: 100%;
-    padding: 304px 0;
-    height: 100vh;
+    padding: 310px 0;
+    
     display: flex;
     align-items: center;
     justify-content: center;
