@@ -7,7 +7,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
 }
 
 
@@ -52,6 +51,7 @@ div#a > a:hover::after{
 .box{
     width: 100%;
     padding: 300px 0;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
