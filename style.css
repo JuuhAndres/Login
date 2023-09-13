@@ -7,11 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body,html{
-    
 
-    background-size: cover;
-}
 
 div#a{
     text-align: center;
@@ -54,7 +50,7 @@ div#a > a:hover::after{
 .box{
     width: 100%;
     padding: 310px 0;
-    
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
